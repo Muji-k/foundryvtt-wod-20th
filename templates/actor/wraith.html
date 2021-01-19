@@ -1,0 +1,119 @@
+<form autocomplete="off">
+  
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    <a class="item" data-tab="page1">Page 1</a>
+    <a class="item" data-tab="page2">Page 2</a>
+    <a class="item" data-tab="page3">Page 3</a>
+    <a class="item" data-tab="page4">Page 4</a>
+    <a class="item" data-tab="page5">Page 5</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+    {{!-- Page 1 --}}
+    <div class="page1" data-group="primary" data-tab="page1">
+      <div class="header">
+        <div class="col">
+          <input type="text" class="input" name="name" value="{{actor.name}}" /><br>
+          <input type="text" class="input" name="data.header.player" value="{{data.header.player}}"/><br>
+          <input type="text" class="input" name="data.header.chronicle" value="{{data.header.chronicle}}"/>
+        </div>
+        <div class="col">
+          <input type="text" class="input" name="data.header.nature" value="{{data.header.nature}}"/><br>
+          <input type="text" class="input" name="data.header.demeanor" value="{{data.header.demeanor}}"/><br>
+          <input type="text" class="input" name="data.header.shadow" value="{{data.header.shadow}}"/>
+        </div>
+        <div class="col">
+          <input type="text" class="input" name="data.header.life" value="{{data.header.life}}"/><br>
+          <input type="text" class="input" name="data.header.death" value="{{data.header.death}}"/><br>
+          <input type="text" class="input" name="data.header.regreat" value="{{data.header.regreat}}"/>
+        </div>
+      </div>
+      <div class="att">
+        <div class="col attdots">
+          <div class="row">
+            <input type="checkbox" name="data.att.str" value="1" checked /><span></span>
+            <input type="checkbox" name="data.att.str" value="2" /><span></span>
+            <input type="checkbox" name="data.att.str" value="3" /><span></span>
+            <input type="checkbox" name="data.att.str" value="4" /><span></span>
+            <input type="checkbox" name="data.att.str" value="5" /><span></span>
+          </div>
+          <div class="row">
+            <input type="radio" name="data.att.dex" value="1" checked /><span></span>
+            <input type="radio" name="data.att.dex" value="2" /><span></span>
+            <input type="radio" name="data.att.dex" value="3" /><span></span>
+            <input type="radio" name="data.att.dex" value="4" /><span></span>
+            <input type="radio" name="data.att.dex" value="5" /><span></span>
+          </div>
+          <div class="row">
+            <input type="radio" name="data.att.sta" value="1" checked /><span></span>
+            <input type="radio" name="data.att.sta" value="2" /><span></span>
+            <input type="radio" name="data.att.sta" value="3" /><span></span>
+            <input type="radio" name="data.att.sta" value="4" /><span></span>
+            <input type="radio" name="data.att.sta" value="5" /><span></span>
+          </div>
+        </div>
+        <div class="col attdots">
+          <div class="row">
+            <input type="radio" name="data.att.cha" value="1" checked /><span></span>
+            <input type="radio" name="data.att.cha" value="2" /><span></span>
+            <input type="radio" name="data.att.cha" value="3" /><span></span>
+            <input type="radio" name="data.att.cha" value="4" /><span></span>
+            <input type="radio" name="data.att.cha" value="5" /><span></span>
+          </div>
+          <div class="row">
+            <input type="radio" name="data.att.man" value="1" checked /><span></span>
+            <input type="radio" name="data.att.man" value="2" /><span></span>
+            <input type="radio" name="data.att.man" value="3" /><span></span>
+            <input type="radio" name="data.att.man" value="4" /><span></span>
+            <input type="radio" name="data.att.man" value="5" /><span></span>
+          </div>
+          <div class="row">
+            <input type="radio" name="data.att.app" value="1" checked /><span></span>
+            <input type="radio" name="data.att.app" value="2" /><span></span>
+            <input type="radio" name="data.att.app" value="3" /><span></span>
+            <input type="radio" name="data.att.app" value="4" /><span></span>
+            <input type="radio" name="data.att.app" value="5" /><span></span>
+          </div>
+        </div>
+        <div class="col attdots">
+          <div class="row">
+            <input type="radio" name="data.att.per" value="1" checked /><span></span>
+            <input type="radio" name="data.att.per" value="2" /><span></span>
+            <input type="radio" name="data.att.per" value="3" /><span></span>
+            <input type="radio" name="data.att.per" value="4" /><span></span>
+            <input type="radio" name="data.att.per" value="5" /><span></span>
+          </div>
+          <div class="row">
+            <input type="radio" name="data.att.int" value="1" checked /><span></span>
+            <input type="radio" name="data.att.int" value="2" /><span></span>
+            <input type="radio" name="data.att.int" value="3" /><span></span>
+            <input type="radio" name="data.att.int" value="4" /><span></span>
+            <input type="radio" name="data.att.int" value="5" /><span></span>
+          </div>
+          <div class="row">
+            <input type="radio" name="data.att.wit" value="1" checked /><span></span>
+            <input type="radio" name="data.att.wit" value="2" /><span></span>
+            <input type="radio" name="data.att.wit" value="3" /><span></span>
+            <input type="radio" name="data.att.wit" value="4" /><span></span>
+            <input type="radio" name="data.att.wit" value="5" /><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{!-- Page 2 --}}
+    <div class="page2" data-group="primary" data-tab="page2">
+    </div>
+    {{!-- Page 3 --}}
+    <div class="page3" data-group="primary" data-tab="page3">
+    </div>
+    {{!-- Page 4 --}}
+    <div class="page4" data-group="primary" data-tab="page4">
+    </div>
+    {{!-- Page 5 --}}
+    <div class="page5" data-group="primary" data-tab="page5">
+    </div>
+  </section>
+</form>
+
